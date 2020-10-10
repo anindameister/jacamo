@@ -1,6 +1,6 @@
 # mas
 
-
+- mas1stYear https://www.emse.fr/~boissier/enseignement/maop20-winter/
 
 - https://ci.mines-stetienne.fr/cps2/mac/helloworld.html
 
@@ -56,6 +56,39 @@ In order to coordinate the two agents, instead of commanding alice, bob can only
 ![multi(2 agents) but co-ordination has been established with an additional of the removal of commands and just letting self statis know](https://github.com/anindameister/jacamo/blob/main/snaps/13.PNG)
 
 ![multi(2 agents) but co-ordination has been established with an additional of the removal of commands and just letting self statis know](https://github.com/anindameister/jacamo/blob/main/snaps/114.PNG)
+
+3. Multiple agents coordinating via the environment
+
+- The example now considers an environment with a board artifact, as a blackboard that agents can use to write messages and to perceive message written on it. 
+- In this version of the hello world example, bob writes a message "Hello" on the board blackboard and alice, who is observing the blackboard, 
+- writes the message "World" as soon as it acquires the belief that the message "Hello" has been written.
+
+- Environments are structured into workspaces; 
+- all agent within a workspace have shared access to all artifact instances in that workspace. 
+- In the application file, we can specify the initial set of artifacts and workspaces to be created when the MAS is spawned. উত্সাহিত
+- In this case, the file is as follows:
+
+```
+mas starting9oct2020 {
+	agent aninda {
+    join: workshop      // aninda joins workspace workshop
+    goals: say("ki re choto jaat")
+  }
+
+  agent poulomi {
+    join:  workshop     // poulomi joins workspace workshop
+    focus: workshop.board   // and focus on artifact board
+  }
+
+  workspace workshop {  // creates the workspace workshop
+    artifact board: tools.Blackboard  // with artifact board from Blackboard artifact class
+  }
+}
+```
+
+- Artifacts are implemented in Java. The source code (in file Blackboard.java) of the simple blackboard artifact follows:
+
+- extends: inheritance
 
 ```
 .send(giacomo,achieve,go)
