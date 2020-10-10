@@ -14,11 +14,8 @@
 
 mas starting9oct2020 {
 	agent aninda { // file aninda.asl is used
-      goals: say("ei Bihari'r maal")
+      goals: say("ei choto jaat")
     }
-    agent poulomi { // file poulomi.asl is used
-      beliefs: say("ei Molal'r veg chetechis")
+    agent poulomi: hwa.asl
 }
-}
-
 

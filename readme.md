@@ -40,9 +40,22 @@
 
 - multi(2 agents) but co-ordination has been established
 
-![multi(2 agents) but no coordination](https://github.com/anindameister/jacamo/blob/main/snaps/10.PNG)
+![multi(2 agents) but co-ordination has been established](https://github.com/anindameister/jacamo/blob/main/snaps/10.PNG)
 
-![multi(2 agents) but no coordination](https://github.com/anindameister/jacamo/blob/main/snaps/11.PNG)
+![multi(2 agents) but co-ordination has been established](https://github.com/anindameister/jacamo/blob/main/snaps/11.PNG)
+
+2.3. Tentative 3
+The previous solution has a weakness: bob is strongly directing the execution of alice since this agent achieves any goal say sent from another agent.
+
+In order to coordinate the two agents, instead of commanding alice, bob can only warns it that it has finished its task.
+
+- multi(2 agents) but co-ordination has been established with an additional of the removal of commands and just letting self statis know
+
+![multi(2 agents) but co-ordination has been established with an additional of the removal of commands and just letting self statis know](https://github.com/anindameister/jacamo/blob/main/snaps/12.PNG)
+
+![multi(2 agents) but co-ordination has been established with an additional of the removal of commands and just letting self statis know](https://github.com/anindameister/jacamo/blob/main/snaps/13.PNG)
+
+![multi(2 agents) but co-ordination has been established with an additional of the removal of commands and just letting self statis know](https://github.com/anindameister/jacamo/blob/main/snaps/114.PNG)
 
 ```
 .send(giacomo,achieve,go)
