@@ -13,9 +13,11 @@
 */
 
 mas starting9oct2020 {
-	agent aninda { // file aninda.asl is used
+	agent aninda { // file bob.asl is used
       goals: say("ei choto jaat")
     }
-    agent poulomi: hwa.asl
+    agent poulomi { // file alice.asl is used
+      beliefs: say("tui kake choto jaat bolchis, tui bhikaari jaat")
+   }
 }
 

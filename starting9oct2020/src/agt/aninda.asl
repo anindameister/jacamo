@@ -1,3 +1,3 @@
 // aninda.asl
 +!say(M) <- .print(M);
-            .send(alice,achieve,say("Bhikari Jaat")).
+            .send(poulomi,achieve,say("ei choto jaat kake bolchis, bhikari")).

@@ -36,6 +36,14 @@
 
 ![multi(2 agents) but no coordination](https://github.com/anindameister/jacamo/blob/main/snaps/9.PNG)
 
+2.2. Tentative 2
+
+- multi(2 agents) but co-ordination has been established
+
+![multi(2 agents) but no coordination](https://github.com/anindameister/jacamo/blob/main/snaps/10.PNG)
+
+![multi(2 agents) but no coordination](https://github.com/anindameister/jacamo/blob/main/snaps/11.PNG)
+
 ```
 .send(giacomo,achieve,go)
 ```
