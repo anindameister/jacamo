@@ -13,21 +13,15 @@
 */
 
 mas starting9oct2020 {
-//	agent bob: hwa.asl { // initial plans for bob are in hwa.asl
-//     goals: say("9thOCt2020") // initial goal for bob
-//	}
+	agent bob: hwa.asl { // initial plans for bob are in hwa.asl
+     goals: say("9thOCt2020") // initial goal for bob
+	}
 //	agent alice: hwa.asl {
 //      goals: say("at1124hrsINmasClass")
 //    }
 //    agent sample_agent
 
-    agent aninda { // file bob.asl is used
-      goals: say("Choto Jaat")
-    }
-    agent poulomi: hwa.asl
-}
-
     
 
-
+}
 
