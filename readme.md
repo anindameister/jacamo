@@ -55,7 +55,7 @@ In order to coordinate the two agents, instead of commanding alice, bob can only
 
 ![multi(2 agents) but co-ordination has been established with an additional of the removal of commands and just letting self statis know](https://github.com/anindameister/jacamo/blob/main/snaps/13.PNG)
 
-![multi(2 agents) but co-ordination has been established with an additional of the removal of commands and just letting self statis know](https://github.com/anindameister/jacamo/blob/main/snaps/114.PNG)
+![multi(2 agents) but co-ordination has been established with an additional of the removal of commands and just letting self statis know](https://github.com/anindameister/jacamo/blob/main/snaps/14.PNG)
 
 3. Multiple agents coordinating via the environment
 
@@ -89,6 +89,19 @@ mas starting9oct2020 {
 - Artifacts are implemented in Java. The source code (in file Blackboard.java) of the simple blackboard artifact follows:
 
 - extends: inheritance
+- package name according to Professor is tools, so got to make sure that while putting the java file into the env folder, we got to create a package named tools in that env folder and then put the java file
+- again the javaFileName extends Artifact, this Artifact is existent somewhere and comes along as default.
+
+- extends: inheritance, intro to environment like the black board
+
+![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/15.PNG)
+
+![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/16.PNG)
+
+![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/17.PNG)
+
+![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/18.PNG)
+
 
 ```
 .send(giacomo,achieve,go)

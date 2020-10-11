@@ -13,12 +13,19 @@
 */
 
 mas starting9oct2020 {
-	agent aninda { // file aninda.asl is used
-      goals: say("ei Bihari'r maal")
-    }
-    agent poulomi { // file poulomi.asl is used
-      beliefs: say("ei Molal'r veg chetechis")
-}
+	agent aninda {
+    join: workshop      // aninda joins workspace workshop
+    goals: say("ki re choto jaat")
+  }
+
+  agent poulomi {
+    join:  workshop     // poulomi joins workspace workshop
+    focus: workshop.board   // and focus on artifact board
+  }
+
+  workspace workshop {  // creates the workspace workshop
+    artifact board: tools.Blackboard  // with artifact board from Blackboard artifact class
+  }
 }
 
 

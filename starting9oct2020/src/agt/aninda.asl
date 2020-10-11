@@ -1,3 +1,5 @@
 // aninda.asl
-+!say(M) <- .print(M);
-            .send(poulomi,tell,done).
++!say(M) <- writeMsg(M).
+
+// include of basic plans for handling cartago infra.
+{ include("$jacamoJar/templates/common-cartago.asl") }
