@@ -94,6 +94,9 @@ mas starting9oct2020 {
 
 - extends: inheritance, intro to environment like the black board
 
+- Java classes are used as templates for defining artifacts, 
+- using annotated methods to define artifact operations and predefined methods inherited by Artifact API to work with observable properties 
+- and the other artifact mechanisms.
 ![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/15.PNG)
 
 ![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/16.PNG)
@@ -102,7 +105,130 @@ mas starting9oct2020 {
 
 ![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/18.PNG)
 
+4. Multiple agents participating to an organisation
 
+- We now "organise" the set of agents to produce the "Hello World" message. 
+- An agent organisation can be used to regulate and coordinate the agents. 
+- Although the example is simple, the use of an organisation makes explicit(fully and clearly expressed or demonstrated; leaving nothing merely implied;)
+- and facilitates the changing of the specified coordination and regulation patterns. 
+- We assume here that agents are compliant and use the organisation as a coordination tool. 
+- Coordination will be used to achieve the goal show_message, 
+- a goal that should be achieved by the two agents working together. 
+- This goal is thus called an organisational goal to distinguish it from an agent goal.
+
+- We use a social scheme to program how the organisational goal is decomposed into sub-goals that are assigned to the agents. 
+- For the decomposition, the goal has one sub-goal for each word of the message. 
+- For their assignment to agents, we define a mission for each sub-goal. 
+- In order to participate in the scheme execution, agents should commit to a mission and achieve the corresponding goal(s). 
+- Committing to a mission is a form of promise to the group of agents collectively working on a scheme: 
+- "I promise that, when required, I will do my part of the task". 
+- When agents have committed to all missions, the scheme can be performed with the guarantee that we have enough agents to work on all required sub-goals.
+
+- This organisation example also defines a single role that all agents will play: 
+- the role greeter played in a group type identified by gg (standing for "greeting group"). 
+- Agents playing this role (and only them) are permitted to commit to the missions of the scheme as defined by the norm. 
+- The program of this organisation is written in XML as follows:
+
+![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/19.PNG)
+
+![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/20.PNG)
+
+![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/21.PNG)
+
+![extends: inheritance, intro to environment like the black board](https://github.com/anindameister/jacamo/blob/main/snaps/22.PNG)
+
+- As before, this file has entries for agents and workspaces, but now an organisation field is added.
+
+- In line 19, an organisation entity is created based on the XML file that describes the type of groups and schemes available in the organisation.
+
+```
+// The file .jcm for this implementation of the Hello World is as follows:
+
+// line 19
+organisation greeting : org1.xml {
+//20
+    group ghw : gg {
+	//21
+      responsible-for: shw
+	  /22
+    }
+	//23
+    scheme shw : hw_choreography
+  }
+```
+
+- One group entity is created in line 20 (identified by ghw) 
+- and one scheme entity is created in line 23 (identified by shw). 
+- Line 21 states that group ghw provides the agents for the execution of scheme shw.
+
+- Lines 5 for bob
+```
+roles: greeter in ghw
+```
+- and 11 assign role greeter to our agents(alice) in group ghw.
+```
+    roles: greeter in ghw
+```
+
+- Lines 6 (for bob)
+```
+beliefs: my_mission(mission1)
+```
+and 12 add beliefs in the agents regarding the missions to which they should commit. (for alice)
+```
+    beliefs: my_mission(mission2)
+```
+
+- The execution of the file happens as follows:
+
+- The workspace greeting and its artifact are created.
+
+- The group and scheme entities are created and linked (responsible_for).
+
+- Agents bob and alice are created, they join the workspace workshop.
+
+- The agents are assigned the role greeter.
+
+- By playing this role, they start believing
+```
+// hwa.asl
++permission(A,_,committed(A,M,S),_)
+```
+
+permission(bob,,committed(bob,mission1,shw),)
+
+permission(bob,,committed(bob,mission2,shw),)
+
+permission(alice,,committed(alice,mission1,shw),)
+
+permission(alice,,committed(alice,mission2,shw),)
+
+- The addition of these beliefs trigger their first plan and they commit to their missions.
+
+- When the agents have committed to their missions, the scheme shw has enough agents for it to be carried out and the goal show_w1 can be finally pursued.
+
+- Agent bob, being committed to mission1, is informed that goal shwo_w1 can be adopted and it does so; the message "Hello" is written on the blackboard.
+
+- Agent alice is then told to achieve show_w2 and it does so; the message "World" is written on the blackboard.
+
+- The scheme is finished.
+
+- Execute this new .jcm file
+
+- We can notice a coordinated behaviour: the words are always shown in the correct order. 
+- Moreover, the coordination is implemented in the organisation, 
+- not in the agents (there is no code in the agents to coordinate their individual actions so that the overall system behaviour is as expected).
+
+# difference between organisation and environment
+
+![difference between organisation and environment](https://github.com/anindameister/jacamo/blob/main/snaps/23.PNG)
+
+
+# project on day 2
+
+![project on day 2](https://github.com/anindameister/jacamo/blob/main/snaps/24.PNG)
+
+- abc
 ```
 .send(giacomo,achieve,go)
 ```
