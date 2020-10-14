@@ -6,6 +6,8 @@
 
 - https://ci.mines-stetienne.fr/cps2/mac/usecase-agent-centric.html
 
+- https://ci.mines-stetienne.fr/cps2/mac/
+
 1. Single Agent
 
 - sample
