@@ -225,6 +225,42 @@ permission(alice,,committed(alice,mission2,shw),)
 
 ![difference between organisation and environment](https://github.com/anindameister/jacamo/blob/main/snaps/23.PNG)
 
+# multi-agent planning
+
+![multi-agent planning](https://github.com/anindameister/jacamo/blob/main/snaps/26.jpeg)
+
+# mono-agent planning
+
+![mono-agent planning](https://github.com/anindameister/jacamo/blob/main/snaps/27.jpeg)
+
+# ways to reach the goal, forward and backward chaining
+
+![mono-agent planning](https://github.com/anindameister/jacamo/blob/main/snaps/28.jpeg)
+
+# centralised planning
+
+![centralised planning](https://github.com/anindameister/jacamo/blob/main/snaps/29.jpeg)
+
+# multi-agent planning of a multi-agent plan
+
+![multi-agent planning of a multi-agent plan](https://github.com/anindameister/jacamo/blob/main/snaps/30.jpeg)
+
+# answering the audience
+
+![answering the audience](https://github.com/anindameister/jacamo/blob/main/snaps/31.jpeg)
+
+![answering the audience](https://github.com/anindameister/jacamo/blob/main/snaps/32.jpeg)
+
+# artifacts and some more answering
+
+- agents co-ordinate with the use of artifacts
+
+![answering the audience](https://github.com/anindameister/jacamo/blob/main/snaps/33.jpeg)
+
+# closed and open-systems
+
+![closed and open-systems](https://github.com/anindameister/jacamo/blob/main/snaps/34.jpeg)
+
 
 # project on day 2
 

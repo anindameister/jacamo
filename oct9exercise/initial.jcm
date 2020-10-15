@@ -14,10 +14,12 @@ mas house_building {
 	// builder agents (see their code for details)
    agent companyA {  
 	focus: site.housegui
+	goals:say(my_task)
    }
    
    agent companyB {
    	  focus: site.housegui
+   	  goals:say(my_task)
    }
    
    agent companyC {
