@@ -10,6 +10,8 @@
 my_price(300). 
 my_task("Plumbing").
 
+
+
 // initial goal to discover artifact
 !start.
 
@@ -21,6 +23,8 @@ my_task("Plumbing").
    <- //.print("my bid in auction artifact ", Art, " is ",P);
       bid( P ).                          // place my bid offering a cheaper service
 
+
++!say(M)<-.send(giacomo,tell,my_task).
 /* plans for execution phase */
 
 { include("org_code.asl") }

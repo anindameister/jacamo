@@ -26,7 +26,7 @@ my_task("Painting").
       bid( Bid )[artifact_id(Art)]. // recall that the artifact ignores if this
                                     // agent places a bid that is higher than
                                     // the current bid
-
++!say(M)<-.send(giacomo,tell,my_task).
 /* plans for execution phase */
 
 { include("org_code.asl") }

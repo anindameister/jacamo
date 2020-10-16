@@ -36,6 +36,7 @@ sum_of_my_offers(S) :-
    <- //.print("my bid in auction artifact ", Art, ", Task ", S,", is ",math.max(V-10,P));
       bid( math.max(V-10,P) )[ artifact_id(Art) ].  // place my bid offering a cheaper service
 
++!say(M)<-.send(giacomo,tell,my_task).
 /* plans for execution phase */
 
 { include("org_code.asl") }

@@ -266,6 +266,16 @@ permission(alice,,committed(alice,mission2,shw),)
 
 ![project on day 2](https://github.com/anindameister/jacamo/blob/main/snaps/24.PNG)
 
+# day3 different guy
+
+![day3 different guy](https://github.com/anindameister/jacamo/blob/main/snaps/35.jpeg)
+
+![day3 different guy](https://github.com/anindameister/jacamo/blob/main/snaps/36.jpeg)
+
+![day3 different guy](https://github.com/anindameister/jacamo/blob/main/snaps/37.jpeg)
+
+![day3 different guy](https://github.com/anindameister/jacamo/blob/main/snaps/38.jpeg)
+
 - abc
 ```
 .send(giacomo,achieve,go)

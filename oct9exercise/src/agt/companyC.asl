@@ -33,6 +33,10 @@ my_task("Plumbing").
 my_task("ElectricalSystem").
 my_task("Painting").
 
+//.broadcast(tell,my_task).
+
+
+
 // initial goal to discover artifact
 !start.
 
@@ -46,6 +50,7 @@ my_task("Painting").
    <- //.print("my bid in auction artifact ", Art, ", Task ", S, ", is ", P);
       bid( P )[ artifact_id(Art) ].     // place my bid offering a cheaper service
 
++!say(M)<-.send(giacomo,tell,my_task).
 /* plans for execution phase */
 
 { include("org_code.asl") }

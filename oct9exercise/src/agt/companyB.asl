@@ -9,6 +9,7 @@
 // initial belief
 my_price(1500). 
 my_task("SitePreparation").
+.broadcast(tell,my_task).
 
 // initial goal to discover artifact
 !start.
@@ -19,6 +20,7 @@ my_task("SitePreparation").
    <- //.print("my bid in auction artifact ", Art, " is ",math.max(V-150,P));
       bid( math.max(V-150,P) ).         // place my bid offering a cheaper service
 
++!say(M)<-.send(giacomo,tell,my_task).
 /* plans for execution phase */
 
 { include("org_code.asl") }
