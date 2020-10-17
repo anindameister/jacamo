@@ -319,6 +319,8 @@ permission(alice,,committed(alice,mission2,shw),)
 
 #### example of manipulation of Borda system, slide36
 
+file://desktop-nessg2u/h/SEMESTER3/jacamo/leturc2020c-man-mas.pdf
+
 ![Nash equilibrium on the prisoner's dilemma](https://github.com/anindameister/jacamo/blob/main/snaps/41.jpeg)
 
 #### Voting Theory: Plurality Method and Condorcet Criterion [[7]](#7).
@@ -327,7 +329,21 @@ permission(alice,,committed(alice,mission2,shw),)
 
 ![Condorcet Criterion](https://github.com/anindameister/jacamo/blob/main/snaps/33.PNG)
 
+#### Manipulate Plurality Method 
 
+![Manipulate Plurality Method ](https://github.com/anindameister/jacamo/blob/main/snaps/42.jpeg)
+
+#### Understanding the meaning of manipulation, 42/47
+
+![Understanding the meaning of manipulation](https://github.com/anindameister/jacamo/blob/main/snaps/34.PNG)
+
+- coercion- the action or practice of persuading someone to do something by using force or threats.
+- persuasion - the action or process of persuading someone or of being persuaded to do or believe something.
+- "Monica needed plenty of persuasion before she actually left"
+
+![Understanding the meaning of manipulation](https://github.com/anindameister/jacamo/blob/main/snaps/35.PNG)
+
+![Understanding the meaning of manipulation](https://github.com/anindameister/jacamo/blob/main/snaps/36.PNG)
 
 # 2nd day some instruction in regards to practical work
 
