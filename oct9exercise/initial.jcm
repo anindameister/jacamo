@@ -14,17 +14,18 @@ mas house_building {
 	// builder agents (see their code for details)
    agent companyA {  
 	focus: site.housegui
-	goals:say(my_task)
+//	goals:say(my_task)
    }
    
    agent companyB {
    	  focus: site.housegui
-   	  goals:say(my_task)
+//   	  goals:say(my_task)
    }
    
    agent companyC {
       instances: 5    // 5 agents of the type companyC
       focus: site.housegui
+//      goals: for(companyC())
    }
    
    agent companyD {
